@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='contentContainer'>
+ <image class='avatar' src='/images/index/cart.jpg'></image>
+ <text class='userName'>Hello,Bubble</text>
+ <view class='goStu' catchtap="gotoList">
+   <text>开启小程序之旅</text>
+ </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+<import src='/pages/listTemp/listTemp'/>
+<view>
+  <swiper indicator-dots indicator-color='green' indicator-active-color='orange' circular>
+   <swiper-item>
+     <image src="/images/detail/carousel/01.jpg"></image>
+   </swiper-item>
+    <swiper-item>
+     <image src="/images/detail/carousel/02.jpg"></image>
+   </swiper-item>
+    <swiper-item>
+     <image src="/images/detail/carousel/03.jpg"></image>
+   </swiper-item>
+    <swiper-item>
+     <image src="/images/detail/carousel/04.jpg"></image>
+   </swiper-item>
+  </swiper>
+  <view wx:for="{{listArr}}" wx:key="{{index}}">
+    <view catchtap="toDetail" data-index="{{index}}">
+      <template is="listTemp" data="{{...item}}"/>
+    </view>
+  </view>
+</view>
